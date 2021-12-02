@@ -6,7 +6,7 @@ with open("input.txt", "r") as f:
 increased = 0
 
 for i in range(1, len(depths)):
-    if int(depths[i]) > int(depths[i - 1]):
+    if depths[i] > depths[i - 1]:
         increased += 1
 
 print(increased)
@@ -16,7 +16,7 @@ print(increased)
 increased = 0
 
 for i in range(3, len(depths)):
-    if int(depths[i]) > int(depths[i - 3]):
+    if depths[i] > depths[i - 3]:
         increased += 1
 
 print(increased)
