@@ -1,7 +1,7 @@
 from copy import deepcopy
 
 with open("input2.txt", "r") as f:
-    lines = [line.strip() for line in f.readlines()]
+  lines = [line.strip() for line in f.readlines()]
 
 # part 1
 
@@ -19,23 +19,23 @@ oxy = deepcopy(lines)
 oxy_sum = deepcopy(bit_sum)
 
 for i in range(len(bit_sum)):
-    if len(oxy) == 1:
-        break
+  if len(oxy) == 1:
+    break
 
-    oxy_crit = 0 if oxy_sum[i] >= len(oxy) / 2 else 1
-    oxy = list(filter(lambda j: j[i] != oxy_crit, oxy))
-    oxy_sum = [sum(bit) for bit in zip(*oxy)]
+  oxy_crit = 0 if oxy_sum[i] >= len(oxy) / 2 else 1
+  oxy = list(filter(lambda j: j[i] != oxy_crit, oxy))
+  oxy_sum = [sum(bit) for bit in zip(*oxy)]
 
 co2 = deepcopy(lines)
 co2_sum = deepcopy(bit_sum)
 
 for i in range(len(bit_sum)):
-    if len(co2) == 1:
-        break
+  if len(co2) == 1:
+    break
 
-    co2_crit = 0 if co2_sum[i] < len(co2) / 2 else 1
-    co2 = list(filter(lambda j: j[i] != co2_crit, co2))
-    co2_sum = [sum(bit) for bit in zip(*co2)]
+  co2_crit = 0 if co2_sum[i] < len(co2) / 2 else 1
+  co2 = list(filter(lambda j: j[i] != co2_crit, co2))
+  co2_sum = [sum(bit) for bit in zip(*co2)]
 
 oxy = "".join(str(bit) for i in oxy for bit in i)
 co2 = "".join(str(bit) for i in co2 for bit in i)
