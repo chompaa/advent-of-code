@@ -1,6 +1,5 @@
 with open("input.txt", "r") as f:
-  vals = [line.split(",") for line in f.readlines()][0]
-  vals = [int(val) for val in vals]
+  vals = [int(val) for val in f.read().split(",")]
 
 # part 1
 
