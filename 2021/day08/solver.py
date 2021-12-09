@@ -81,7 +81,7 @@ class Solver():
         case 4:
           queue = []
           for candidate in self.signals[0]:
-            if len(set(candidate) & set(v[0])) == len(set(v[0])):
+            if set(candidate) & set(v[0]) == set(v[0]):
               queue.append(candidate)
 
           self.remove_candidates(queue, 0, 6, 9)
