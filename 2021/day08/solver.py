@@ -1,5 +1,3 @@
-import re
-
 with open("input.txt", "r") as f:
   vals = [line for line in f.read()]
 
