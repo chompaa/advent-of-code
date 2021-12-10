@@ -16,3 +16,4 @@ All of my solutions will be/are written in Python.
 | [07 - The Treachery of Whales](https://www.adventofcode.com/2021/day/7) | ⭐⭐     |
 | [08 - Seven Segment Search](https://www.adventofcode.com/2021/day/8)    | ⭐⭐     |
 | [09 - Smoke Basin](https://www.adventofcode.com/2021/day/9)             | ⭐⭐     |
+| [10 - Syntax Scoring](https://www.adventofcode.com/2021/day/10)         | ⭐⭐     |
