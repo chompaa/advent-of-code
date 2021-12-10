@@ -1,4 +1,4 @@
-with open("example.txt", "r") as f:
+with open("input.txt", "r") as f:
   lines = f.read().splitlines()
 
 syms = {
@@ -22,11 +22,11 @@ score = 0
 for line in lines:
   stack = []
 
-  for idx, char in enumerate(line):
+  for char in line:
     if char in syms.keys():
       stack.append(char)
     elif syms[stack.pop()] != char:
-      score += illegal_weights[line[idx]]
+      score += illegal_weights[char]
       break
 
 
@@ -47,7 +47,7 @@ for line in lines:
   stack = []
   score = 0
 
-  for idx, char in enumerate(line):
+  for char in line:
     if char in syms.keys():
       stack.append(char)
     elif syms[stack.pop()] != char:
