@@ -15,3 +15,4 @@ All of my solutions will be/are written in Python.
 | [06 - Lanternfish](https://www.adventofcode.com/2021/day/6)             | ⭐⭐     |
 | [07 - The Treachery of Whales](https://www.adventofcode.com/2021/day/7) | ⭐⭐     |
 | [08 - Seven Segment Search](https://www.adventofcode.com/2021/day/8)    | ⭐⭐     |
+| [09 - Smoke Basin](https://www.adventofcode.com/2021/day/9)             | ⭐⭐     |
