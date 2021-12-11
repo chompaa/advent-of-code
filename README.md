@@ -17,3 +17,4 @@ All of my solutions will be/are written in Python.
 | [08 - Seven Segment Search](https://www.adventofcode.com/2021/day/8)    | ⭐⭐     |
 | [09 - Smoke Basin](https://www.adventofcode.com/2021/day/9)             | ⭐⭐     |
 | [10 - Syntax Scoring](https://www.adventofcode.com/2021/day/10)         | ⭐⭐     |
+| [11 - Dumbo Octopus](https://www.adventofcode.com/2021/day/11)          | ⭐⭐     |
