@@ -19,3 +19,4 @@ All of my solutions will be/are written in Python.
 | [10 - Syntax Scoring](https://www.adventofcode.com/2021/day/10)         | ⭐⭐     |
 | [11 - Dumbo Octopus](https://www.adventofcode.com/2021/day/11)          | ⭐⭐     |
 | [12 - Passage Pathing](https://www.adventofcode.com/2021/day/12)        | ⭐⭐     |
+| [13 - Transparent Origami](https://www.adventofcode.com/2021/day/13)    | ⭐⭐     |
