@@ -19,8 +19,8 @@ def fold(coords, folds):
         while coord[idx] < 0:
           coord[idx] = coord[idx] % line
 
-# part 1
 
+# part 1
 
 _coords = deepcopy(coords)
 
