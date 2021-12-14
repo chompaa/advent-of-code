@@ -1,3 +1,5 @@
+from collections import Counter, defaultdict
+
 with open("input.txt") as f:
   lines = [line.strip() for line in f.readlines()]
 
@@ -8,22 +10,13 @@ ins = {tuple(s.split(" -> ")[0]): s.split(" -> ")[1] for s in lines[2:]}
 
 
 def difference(step, temp, ins):
-  # for resetting pair counts
-  zero_pairs = {k: 0 for k in ins}
-
-  # template pairs
-  temp_pairs = [(temp[idx - 1], temp[idx])
-                for idx in range(1, len(temp))]
-
   # assign counts to template pairs
-  pairs = zero_pairs.copy()
-  for pair in temp_pairs:
-    pairs[pair] += 1
+  pairs = Counter(zip(temp, temp[1:]))
 
   # to keep track of letter counts
-  counts = {letter: 0 for letter in set(ins.values())}
+  counts = defaultdict(int)
 
-  new_pairs = zero_pairs.copy()
+  new_pairs = defaultdict(int)
 
   for _ in range(step):
     for pair, count in pairs.items():
@@ -35,17 +28,14 @@ def difference(step, temp, ins):
 
     _pairs = new_pairs.copy()
     # reset new_pairs
-    new_pairs = zero_pairs.copy()
+    new_pairs = defaultdict(int)
     # accumulate total pairs
     pairs = _pairs.copy()
 
   for pair, count in pairs.items():
     counts[pair[1]] += count
 
-  least = min(list(counts.values()))
-  most = max(list(counts.values()))
-
-  return most - least
+  return max(counts.values()) - min(counts.values())
 
 
 # part 1
