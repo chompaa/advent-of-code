@@ -31,7 +31,7 @@ def get_neighbours(node):
 
 
 def dijkstra(graph, start, end):
-  seen = set()
+  seen = set(start)
   queue = [(0, start)]
 
   while len(queue) > 0:
@@ -40,16 +40,17 @@ def dijkstra(graph, start, end):
     if node == end:
       return dist
 
-    if node in seen:
-      continue
+    # if node in seen:
+    #   continue
 
-    seen.add(node)
+    # seen.add(node)
 
     for neighbour in get_neighbours(node):
       if neighbour not in graph or neighbour in seen:
         continue
 
       heappush(queue, (dist + graph[neighbour], neighbour))
+      seen.add(neighbour)
 
 
 # part 1
@@ -66,7 +67,7 @@ offset = len(cavern)
 # definitely a better way to do this...
 
 for _ in range(1, 5):
-  chunk = {}
+  chunk = graph.copy()
 
   for node, cost in graph.items():
     x, y = node
