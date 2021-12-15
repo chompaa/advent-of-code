@@ -1,5 +1,4 @@
 from heapq import heappush, heappop
-from collections import defaultdict
 from math import sqrt
 
 with open("input.txt") as f:
@@ -39,11 +38,6 @@ def dijkstra(graph, start, end):
 
     if node == end:
       return dist
-
-    # if node in seen:
-    #   continue
-
-    # seen.add(node)
 
     for neighbour in get_neighbours(node):
       if neighbour not in graph or neighbour in seen:
