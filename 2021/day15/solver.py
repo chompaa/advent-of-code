@@ -30,7 +30,7 @@ def get_neighbours(node):
   return nodes
 
 
-def dijkstra(graph, start=None, end=None):
+def dijkstra(graph, start, end):
   seen = set()
   queue = [(0, start)]
 
