@@ -21,3 +21,4 @@ All of my solutions will be/are written in Python.
 | [12 - Passage Pathing](https://www.adventofcode.com/2021/day/12)         | ⭐⭐     |
 | [13 - Transparent Origami](https://www.adventofcode.com/2021/day/13)     | ⭐⭐     |
 | [14 - Extended Polymerization](https://www.adventofcode.com/2021/day/14) | ⭐⭐     |
+| [15 - Chiton](https://www.adventofcode.com/2021/day/15)                  | ⭐⭐     |
