@@ -23,3 +23,4 @@ All of my solutions will be/are written in Python.
 | [14 - Extended Polymerization](https://www.adventofcode.com/2021/day/14) | ⭐⭐     |
 | [15 - Chiton](https://www.adventofcode.com/2021/day/15)                  | ⭐⭐     |
 | [16 - Packet Decoder](https://www.adventofcode.com/2021/day/16)          | ⭐⭐     |
+| [17 - Trick Shot](https://www.adventofcode.com/2021/day/17)              | ⭐⭐     |
