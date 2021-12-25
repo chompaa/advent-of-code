@@ -31,3 +31,4 @@ All of my solutions will be/are written in Python.
 | [22 - Reactor Reboot](https://www.adventofcode.com/2021/day/22)          |        |
 | [23 - Amphipod](https://www.adventofcode.com/2021/day/23)                |        |
 | [24 - Arithmetic Logic Unit](https://www.adventofcode.com/2021/day/24)   | ⭐⭐     |
+| [25 - Sea Cucumber](https://www.adventofcode.com/2021/day/25)            | ⭐⭐     |
