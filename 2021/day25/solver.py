@@ -9,8 +9,6 @@ south = set()
 
 for i, row in enumerate(lines):
   for j, col in enumerate(row):
-    if col == ".":
-      continue
     match col:
       case ".":
         pass
