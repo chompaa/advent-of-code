@@ -25,7 +25,7 @@ All of my solutions will be/are written in Python.
 | [16 - Packet Decoder](https://www.adventofcode.com/2021/day/16)          | ⭐⭐     |
 | [17 - Trick Shot](https://www.adventofcode.com/2021/day/17)              | ⭐⭐     |
 | [18 - Snailfish](https://www.adventofcode.com/2021/day/18)               | ⭐⭐     |
-| [19 - Beacon Scanner](https://www.adventofcode.com/2021/day/19)          |        |
+| [19 - Beacon Scanner](https://www.adventofcode.com/2021/day/19)          | ⭐⭐     |
 | [20 - Trench Map](https://www.adventofcode.com/2021/day/20)              |        |
 | [21 - Dirac Dice](https://www.adventofcode.com/2021/day/21)              |        |
 | [22 - Reactor Reboot](https://www.adventofcode.com/2021/day/22)          |        |
