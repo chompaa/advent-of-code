@@ -27,7 +27,7 @@ All of my solutions will be/are written in Python.
 | [18 - Snailfish](https://www.adventofcode.com/2021/day/18)               | ⭐⭐     |
 | [19 - Beacon Scanner](https://www.adventofcode.com/2021/day/19)          | ⭐⭐     |
 | [20 - Trench Map](https://www.adventofcode.com/2021/day/20)              |        |
-| [21 - Dirac Dice](https://www.adventofcode.com/2021/day/21)              |        |
+| [21 - Dirac Dice](https://www.adventofcode.com/2021/day/21)              | ⭐⭐     |
 | [22 - Reactor Reboot](https://www.adventofcode.com/2021/day/22)          |        |
 | [23 - Amphipod](https://www.adventofcode.com/2021/day/23)                |        |
 | [24 - Arithmetic Logic Unit](https://www.adventofcode.com/2021/day/24)   | ⭐⭐     |
