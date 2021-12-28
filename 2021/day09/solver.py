@@ -1,4 +1,6 @@
-with open("input.txt", "r") as f:
+from os.path import dirname, join
+
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   grid = [
       list(filter(lambda x: x != "\n", [line for line in lines]))
       for lines in f.readlines()]

@@ -1,4 +1,6 @@
-with open("example.txt") as f:
+from os.path import dirname, join
+
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   cavern = [[int(col) for col in row] for row in f.read().splitlines()]
 
 cavern_dict = {}

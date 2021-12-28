@@ -1,4 +1,6 @@
-with open("input.txt") as f:
+from os.path import dirname, join
+
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   lines = [line for line in f.read().splitlines()]
 
 nodes = []

@@ -1,6 +1,7 @@
+from os.path import dirname, join
 from itertools import chain
 
-with open("input.txt", "r") as f:
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   lines = [line.strip().split(" -> ") for line in f.readlines()]
 
 lines = [[node.split(",") for node in line] for line in lines]

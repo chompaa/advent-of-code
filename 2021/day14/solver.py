@@ -1,6 +1,7 @@
+from os.path import dirname, join
 from collections import Counter, defaultdict
 
-with open("input.txt") as f:
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   lines = [line.strip() for line in f.readlines()]
 
 # template

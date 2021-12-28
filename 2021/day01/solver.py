@@ -1,4 +1,6 @@
-with open("input.txt", "r") as f:
+from os.path import dirname, join
+
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   depths = [int(line.strip()) for line in f]
 
 # Part 1

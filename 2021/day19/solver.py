@@ -1,7 +1,7 @@
-import os.path
+from os.path import dirname, join
 from collections import defaultdict
 
-with open(os.path.join(os.path.dirname(__file__), "input.txt")) as f:
+with open(join(dirname(__file__), "example.txt")) as f:
   scanners = [
       {eval(line) for line in scanner.splitlines() if "scanner" not in line}
       for scanner in f.read().split("\n\n")

@@ -1,4 +1,6 @@
-with open("input.txt") as f:
+from os.path import dirname, join
+
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   line = f.readlines()[0][13:].split(", ")
 
 ax_0, ax_1 = list(map(int, line[0][2:].split("..")))

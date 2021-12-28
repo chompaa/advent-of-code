@@ -1,6 +1,7 @@
+from os.path import dirname, join
 from math import prod
 
-with open("input.txt") as f:
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   bin_line = "".join(bin(int(c, 16))[2:].zfill(4) for c in f.readlines()[0])
 
 

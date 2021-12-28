@@ -23,7 +23,7 @@ for line in lines:
   stack = []
 
   for char in line:
-    if char in syms.keys():
+    if char in syms:
       stack.append(char)
     elif syms[stack.pop()] != char:
       score += illegal_weights[char]
@@ -48,7 +48,7 @@ for line in lines:
   score = 0
 
   for char in line:
-    if char in syms.keys():
+    if char in syms:
       stack.append(char)
     elif syms[stack.pop()] != char:
       break

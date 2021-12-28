@@ -1,7 +1,7 @@
-from os.path import join, dirname
+from os.path import dirname, join
 from itertools import count
 
-with open(join(dirname(__file__), "input.txt")) as f:
+with open(join(dirname(__file__), "example.txt")) as f:
   lines = f.read().splitlines()
 
 east = set()

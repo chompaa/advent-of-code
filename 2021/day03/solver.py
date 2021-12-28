@@ -1,6 +1,7 @@
+from os.path import dirname, join
 from copy import deepcopy
 
-with open("input2.txt", "r") as f:
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   lines = [line.strip() for line in f.readlines()]
 
 # part 1
@@ -24,7 +25,7 @@ for i in range(len(bit_sum)):
 
   oxy_crit = 0 if oxy_sum[i] >= len(oxy) / 2 else 1
   oxy = list(filter(lambda j: j[i] != oxy_crit, oxy))
-  oxy_sum = [sum(bit) for bit in zip(*oxy)]
+oxy_sum = [sum(bit) for bit in zip(*oxy)]
 
 co2 = deepcopy(lines)
 co2_sum = deepcopy(bit_sum)

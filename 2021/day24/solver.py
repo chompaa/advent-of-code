@@ -1,7 +1,8 @@
+from os.path import dirname, join
 from functools import lru_cache
 from time import perf_counter
 
-with open("input.txt", "r") as f:
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   lines = f.read().splitlines()
 
 progs = [line.split() for line in lines]

@@ -1,7 +1,8 @@
+from os.path import dirname, join
 from itertools import chain
 from copy import deepcopy
 
-with open("input.txt") as f:
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   lines = [line.strip() for line in f.readlines()]
 
 numbers = lines[0].split(",")

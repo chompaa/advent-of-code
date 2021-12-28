@@ -1,7 +1,8 @@
+from os.path import dirname, join
 from heapq import heappush, heappop
 from math import sqrt
 
-with open("input.txt") as f:
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   cavern = [[int(col) for col in row] for row in f.read().splitlines()]
 
 last = len(cavern) - 1

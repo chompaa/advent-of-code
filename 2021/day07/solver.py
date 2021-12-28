@@ -1,4 +1,6 @@
-with open("input.txt", "r") as f:
+from os.path import dirname, join
+
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   vals = [int(val) for val in f.read().split(",")]
 
 # part 1

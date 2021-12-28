@@ -1,8 +1,9 @@
+from os.path import dirname, join
 import re
 from math import ceil
 from ast import literal_eval
 
-with open("example.txt") as f:
+with open(join(dirname(__file__), "example.txt"), "r") as f:
   lines = f.read().splitlines()
 
 pair_re = re.compile(r"\[(\d+),(\d+)\]")

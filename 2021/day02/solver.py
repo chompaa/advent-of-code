@@ -1,6 +1,7 @@
-with open("input.txt", "r") as f:
-  dirs = [line.strip().split(' ') for line in f.readlines()]
-  dirs = [(dir, int(val)) for [dir, val] in dirs]
+from os.path import dirname, join
+
+with open(join(dirname(__file__), "example.txt"), "r") as f:
+  dirs = [(l.split()[0], int(l.split()[1])) for l in f.read().splitlines()]
 
 # part 1
 
