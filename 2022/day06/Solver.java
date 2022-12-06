@@ -1,8 +1,9 @@
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Set;
 
 class Solver {
@@ -25,26 +26,24 @@ class Solver {
 	}
 
 	public static int getMarkerEnd(String buffer, int length) {
-		ArrayList<Character> chars = new ArrayList<>();
+		Queue<Character> queue = new LinkedList<>();
 		int end = 0;
 
 		for (int i = 0; i < buffer.length(); i++) {
 			if (i > length - 1) {
-				chars.set(0, buffer.charAt(i));
-				// [a, b, c, d] -> [b, c, d, a]
-				Collections.rotate(chars, -1);
+				queue.remove();
+				queue.add(buffer.charAt(i));
 
-				Set<Character> uniqueChars = new HashSet<>(chars);
-
+				Set<Character> uniqueChars = new HashSet<>(queue);
 				if (uniqueChars.size() == length) {
 					end = i + 1;
 					break;
 				}
 			} else {
-				chars.add(buffer.charAt(i));
+				queue.add(buffer.charAt(i));
 			}
 		}
-
+		
 		return end;
 	}
 }
