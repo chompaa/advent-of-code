@@ -1,12 +1,30 @@
 # Advent of Code ⛄
 
-This is my first year participating in [Advent of Code](https://www.adventofcode.com).
-All of my solutions will be/are written in Python.
+This is my second year participating in [Advent of Code](https://www.adventofcode.com).
+My current (2022) solutions are being written in Java. Previously I used Python (2021).
 
-## 2021
+## 2022
+<details><summary>Open</summary>
+
 ---
 | Day                                                                      | Status |
-| ------------------------------------------------------------------------ | ------ |
+| ------------------------------------------------------------------------ | :----: |
+| [01 - Calorie Counting](https://www.adventofcode.com/2022/day/1)         | ⭐⭐  |
+| [02 - Rock Paper Scissors](https://www.adventofcode.com/2022/day/2)      | ⭐⭐  |
+| [03 - Rucksack Reorganization](https://www.adventofcode.com/2022/day/3)  | ⭐⭐  |
+| [04 - Camp Cleanup](https://www.adventofcode.com/2022/day/4)             | ⭐⭐  |
+| [05 - Supply Stacks](https://www.adventofcode.com/2022/day/5)            | ⭐⭐  |
+| [06 - Tuning Trouble](https://www.adventofcode.com/2022/day/6)           | ⭐⭐  |
+
+
+</details>
+
+## 2021
+<details><summary>Open</summary>
+
+---
+| Day                                                                      | Status |
+| ------------------------------------------------------------------------ | :----: |
 | [01 - Sonar Sweep](https://www.adventofcode.com/2021/day/1)              | ⭐⭐     |
 | [02 - Dive!](https://www.adventofcode.com/2021/day/2)                    | ⭐⭐     |
 | [03 - Binary Diagnostic](https://www.adventofcode.com/2021/day/3)        | ⭐⭐     |
@@ -32,3 +50,5 @@ All of my solutions will be/are written in Python.
 | [23 - Amphipod](https://www.adventofcode.com/2021/day/23)                |        |
 | [24 - Arithmetic Logic Unit](https://www.adventofcode.com/2021/day/24)   | ⭐⭐     |
 | [25 - Sea Cucumber](https://www.adventofcode.com/2021/day/25)            | ⭐⭐     |
+
+</details>
