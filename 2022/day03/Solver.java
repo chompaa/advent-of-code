@@ -43,26 +43,25 @@ class Solver {
 
 		for (int i = 0; i < rucksacks.size() + 1; i++) {
 			if (i % 3 == 0) {
-				System.out.println(counts);
 				for (Entry<Character, Integer> entry : counts.entrySet()) {
 					if (entry.getValue() == 3) {
 						char priority = entry.getKey();
-						System.out.println(priority);
 
 						if (priority > 'Z') {
 							sum += 1 + (priority - 'a');
 						} else {
 							sum += 27 + (priority - 'A');
 						}
+
 						break;
 					}
 				}
 
-				if (i == rucksacks.size() - 1) {
-					break;
-				}
-
 				counts.clear();
+			}
+
+			if (i == rucksacks.size() - 1) {
+				break;
 			}
 
 			String rucksack = rucksacks.get(i);
