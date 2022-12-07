@@ -15,6 +15,7 @@ My current (2022) solutions are being written in Java. Previously I used Python 
 | [04 - Camp Cleanup](https://www.adventofcode.com/2022/day/4)             | ⭐⭐  |
 | [05 - Supply Stacks](https://www.adventofcode.com/2022/day/5)            | ⭐⭐  |
 | [06 - Tuning Trouble](https://www.adventofcode.com/2022/day/6)           | ⭐⭐  |
+| [07 - No Space Left On Device](https://www.adventofcode.com/2022/day/7)  | ⭐⭐  |
 
 
 </details>
