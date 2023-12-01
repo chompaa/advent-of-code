@@ -1,6 +1,5 @@
-/2021/**/input.txt
-/2021/**/solver_old.py
-/2022/**/input.txt
-/2022/**/*.class
+/**/**/input.txt
+/**/**/solver_old.py
+/**/**/*.class
 *.code-workspace
 .vscode
