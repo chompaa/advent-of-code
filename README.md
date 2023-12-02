@@ -1,6 +1,6 @@
 # Advent of Code ⛄
 
-This is my second year participating in [Advent of Code](https://www.adventofcode.com).
+This is my third year participating in [Advent of Code](https://www.adventofcode.com).
 My current (2023) solutions are being written in Python. Previously I used Python (2021) and Java
 (2022).
 
