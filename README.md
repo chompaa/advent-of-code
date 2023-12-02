@@ -10,9 +10,10 @@ My current (2023) solutions are being written in Python. Previously I used Pytho
 
 ---
 
-| Day                                                         | Status |
-| ----------------------------------------------------------- | :----: |
-| [01 - Trebuchet?!](https://www.adventofcode.com/2023/day/1) |  ⭐⭐  |
+| Day                                                            | Status |
+| -------------------------------------------------------------- | :----: |
+| [01 - Cube Conundrum](https://www.adventofcode.com/2023/day/1) |  ⭐⭐  |
+| [02 - Trebuchet?!](https://www.adventofcode.com/2023/day/2)    |  ⭐⭐  |
 
 </details>
 
