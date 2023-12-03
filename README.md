@@ -23,8 +23,9 @@ to create the directory structure. Note that files will not be overwritten, with
 
 | Day                                                            | Status |
 | -------------------------------------------------------------- | :----: |
-| [01 - Cube Conundrum](https://www.adventofcode.com/2023/day/1) |  ⭐⭐  |
-| [02 - Trebuchet?!](https://www.adventofcode.com/2023/day/2)    |  ⭐⭐  |
+| [01 - Trebuchet!?](https://www.adventofcode.com/2023/day/1)    |  ⭐⭐  |
+| [02 - Cube Conundrum](https://www.adventofcode.com/2023/day/2) |  ⭐⭐  |
+| [03 - Gear Ratios](https://www.adventofcode.com/2023/day/3)    |  ⭐⭐  |
 
 </details>
 
