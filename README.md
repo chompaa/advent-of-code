@@ -4,6 +4,17 @@ This is my third year participating in [Advent of Code](https://www.adventofcode
 My current (2023) solutions are being written in Python. Previously I used Python (2021) and Java
 (2022).
 
+I use the `make.py` script to make my directories and download my inputs automatically. To use
+this, create a file called `session.cookie` in the root directory, and place your session cookie ID
+inside. Then, you can run:
+
+```shell
+python make.py <year> <day>
+```
+
+to create the directory structure. Note that files will not be overwritten, with the exception of
+`input.txt`.
+
 ## 2023
 
 <details><summary>Open</summary>
