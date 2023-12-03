@@ -15,6 +15,14 @@ python make.py <year> <day>
 to create the directory structure. Note that files will not be overwritten, with the exception of
 `input.txt`.
 
+The `update.py` script adds the challenge day to this README, it requires that there exists at least
+one day already, and is not well-done by any means. You also require a `session.cookie` file to
+run this if you wish. It can be run using
+
+```shell
+python update.py <year> <day> <stars>
+```
+
 ## 2023
 
 <details><summary>Open</summary>

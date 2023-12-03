@@ -4,17 +4,7 @@ import sys
 
 import requests
 
-
-def get_session_id() -> str:
-    """
-    Returns the session ID from the "session.cookie" file.
-
-    Returns:
-        str: The session ID.
-    """
-
-    with open("session.cookie", "r") as f:
-        return f.read().strip()
+import util
 
 
 def make_input(year: int, day: int, path: str) -> None:
@@ -34,7 +24,7 @@ def make_input(year: int, day: int, path: str) -> None:
         None
     """
 
-    session_id = get_session_id()
+    session_id = util.get_session_id()
 
     url = f"https://adventofcode.com/{year}/day/{day}/input"
     response = requests.get(
