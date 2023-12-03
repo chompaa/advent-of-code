@@ -4,3 +4,4 @@
 session.cookie
 *.code-workspace
 .vscode
+**/__pycache__/
