@@ -7,11 +7,12 @@ import util
 
 def update_readme(year: int, day: int, stars: int) -> None:
     """
-    Updates the README.md file with the specified year and day.
+    Updates the README.md file with the specified year, day, and number of stars.
 
     Args:
         year (int): The year.
         day (int): The day.
+        stars (int): The number of stars.
 
     Returns:
         None
