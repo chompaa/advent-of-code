@@ -42,26 +42,26 @@ python update.py <year> <day> <stars>
   <tr>
     <td><a href="https://www.adventofcode.com/2023/day/1">01 - Trebuchet</a></td>
     <td>⭐⭐</td>
-    <td>4118.96µs</td>
-    <td>7738.76µs</td>
+    <td><code>4118.96µs</code></td>
+    <td><code>7738.76µs</code></td>
   </tr>
 	<tr>
 		<td><a href='https://www.adventofcode.com/2023/day/2'>02 - Cube Conundrum</a></td>
 		<td>⭐⭐</td>
-		<td>623.38µs</td>
-		<td>699.21µs</td>
+		<td><code>623.38µs</code></td>
+		<td><code>699.21µs</code></td>
 	</tr>
 	<tr>
 		<td><a href='https://www.adventofcode.com/2023/day/3'>03 - Gear Ratios</a></td>
 		<td>⭐⭐</td>
-		<td>null</td>
-		<td>null</td>
+		<td><code>null</code></td>
+		<td><code>null</code></td>
 	</tr>
 	<tr>
 		<td><a href='https://www.adventofcode.com/2023/day/4'>04 - Scratchcards</a></td>
 		<td>⭐⭐</td>
-		<td>1417.64µs</td>
-		<td>1466.38µs</td>
+		<td><code>1417.64µs</code></td>
+		<td><code>1466.38µs</code></td>
 	</tr>
 </table>
 

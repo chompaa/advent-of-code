@@ -101,17 +101,14 @@ def update_readme(year: int, day: int, stars: int = 2, time: bool = True) -> Non
     if not title:
         raise RuntimeError("Failed to fetch title")
 
-    if time:
-        p_1_time, p_2_time = time_solver(year, day)
-    else:
-        p_1_time = p_2_time = "null"
+    p_1_time, p_2_time = time_solver(year, day) if time else ("null", "null")
 
     entry = [
         "\t<tr>\n",
         f"\t\t<td><a href='{url}'>{day:02d} - {title}</a></td>\n",
         f"\t\t<td>{'⭐' * stars}</td>\n",
-        f"\t\t<td>{p_1_time}</td>\n",
-        f"\t\t<td>{p_2_time}</td>\n",
+        f"\t\t<td><code>{p_1_time}</code></td>\n",
+        f"\t\t<td><code>{p_2_time}</code></td>\n",
         f"\t</tr>\n",
     ]
 
@@ -120,7 +117,9 @@ def update_readme(year: int, day: int, stars: int = 2, time: bool = True) -> Non
 
         for idx, line in enumerate(lines):
             if url.replace(f"day/{day}", f"day/{day - 1}") in line:
-                lines[idx + 5 : idx + 5] = entry
+                offset = idx + len(entry) - 1
+
+                lines[offset:offset] = entry
 
         f.seek(0)
         f.writelines(lines)
