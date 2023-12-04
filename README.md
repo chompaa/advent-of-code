@@ -13,7 +13,7 @@ see the [scripts](scripts/) folder for more information.
 
 ---
 
-> [!NOTE]
+> **Note**:
 > Performance runs were done on an Intel i7-9750H @ 2.60GHz, and were repeated
 > 1000 times.
 
