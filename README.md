@@ -34,6 +34,7 @@ python update.py <year> <day> <stars>
 | [01 - Trebuchet!?](https://www.adventofcode.com/2023/day/1)    |  ⭐⭐  |
 | [02 - Cube Conundrum](https://www.adventofcode.com/2023/day/2) |  ⭐⭐  |
 | [03 - Gear Ratios](https://www.adventofcode.com/2023/day/3)    |  ⭐⭐  |
+| [04 - Scratchcards](https://www.adventofcode.com/2023/day/4)   |  ⭐⭐  |
 
 </details>
 
