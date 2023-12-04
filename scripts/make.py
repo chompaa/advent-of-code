@@ -3,7 +3,6 @@ import shutil
 import sys
 
 import requests
-
 import util
 
 

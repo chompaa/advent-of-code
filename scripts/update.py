@@ -4,7 +4,6 @@ import sys
 import timeit
 
 import requests
-
 import util
 
 
@@ -39,7 +38,7 @@ def time_solver(year: int, day: int, n: int = 1000) -> tuple[float]:
     # convert times to microseconds
     times = tuple(f"{time * (10**6):.2f}µs" for time in times)
 
-    #  be sure to go back to the root directory
+    # be sure to go back to the root directory
     os.chdir("../../")
 
     return times
@@ -79,6 +78,7 @@ def update_readme(year: int, day: int, stars: int = 2, time: bool = True) -> Non
 
     session_id = util.get_session_id()
 
+    # please change the user agent if you use this
     response = requests.get(
         url,
         headers={"User-Agent": "github.com/chompaa"},
@@ -103,6 +103,7 @@ def update_readme(year: int, day: int, stars: int = 2, time: bool = True) -> Non
 
     p_1_time, p_2_time = time_solver(year, day) if time else ("null", "null")
 
+    # again.. hacky
     entry = [
         "\t<tr>\n",
         f"\t\t<td><a href='{url}'>{day:02d} - {title}</a></td>\n",
@@ -117,8 +118,10 @@ def update_readme(year: int, day: int, stars: int = 2, time: bool = True) -> Non
 
         for idx, line in enumerate(lines):
             if url.replace(f"day/{day}", f"day/{day - 1}") in line:
+                # could be handled a bit better..
                 offset = idx + len(entry) - 1
 
+                # insert the entry before the next day
                 lines[offset:offset] = entry
 
         f.seek(0)
