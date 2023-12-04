@@ -108,9 +108,10 @@ def update_readme(year: int, day: int, stars: int = 2, time: bool = True) -> Non
         "\t<tr>\n",
         f"\t\t<td><a href='{url}'>{day:02d} - {title}</a></td>\n",
         f"\t\t<td>{'⭐' * stars}</td>\n",
+        f"\t\t<td><a href='{year}/{day:02d}/solver.py'>Link</a></td>\n"
         f"\t\t<td><code>{p_1_time}</code></td>\n",
         f"\t\t<td><code>{p_2_time}</code></td>\n",
-        f"\t</tr>\n",
+        "\t</tr>\n",
     ]
 
     with open("README.md", "r+", encoding="utf8") as f:

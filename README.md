@@ -17,6 +17,7 @@ see the [scripts](scripts/) folder for more information.
   <tr>
     <td align="center" rowspan=2><b>Day</b></th>
     <td align="center" rowspan=2><b>Status</b></th>
+    <td align="center" rowspan=2><b>Source</b></th>
     <td align="center" colspan=2><b>Performance</b></th>
   </tr>
   <tr>
@@ -26,24 +27,28 @@ see the [scripts](scripts/) folder for more information.
   <tr>
     <td><a href="https://www.adventofcode.com/2023/day/1">01 - Trebuchet</a></td>
     <td>⭐⭐</td>
+		<td><a href="2023/01/solver.py">Link</a></td>
     <td><code>4118.96µs</code></td>
     <td><code>7738.76µs</code></td>
   </tr>
 	<tr>
 		<td><a href='https://www.adventofcode.com/2023/day/2'>02 - Cube Conundrum</a></td>
 		<td>⭐⭐</td>
+		<td><a href="2023/02/solver.py">Link</a></td>
 		<td><code>623.38µs</code></td>
 		<td><code>699.21µs</code></td>
 	</tr>
 	<tr>
 		<td><a href='https://www.adventofcode.com/2023/day/3'>03 - Gear Ratios</a></td>
 		<td>⭐⭐</td>
+		<td><a href="2023/03/solver.py">Link</a></td>
 		<td><code>null</code></td>
 		<td><code>null</code></td>
 	</tr>
 	<tr>
 		<td><a href='https://www.adventofcode.com/2023/day/4'>04 - Scratchcards</a></td>
 		<td>⭐⭐</td>
+		<td><a href="2023/04/solver.py">Link</a></td>
 		<td><code>1417.64µs</code></td>
 		<td><code>1466.38µs</code></td>
 	</tr>
