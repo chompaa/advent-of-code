@@ -4,24 +4,8 @@ This is my third year participating in [Advent of Code](https://www.adventofcode
 My current (2023) solutions are being written in Python. Previously I used Python (2021) and Java
 (2022).
 
-I use the `make.py` script to make my directories and download my inputs automatically. To use
-this, create a file called `session.cookie` in the root directory, and place your session cookie ID
-inside. Then, you can run:
-
-```shell
-python make.py <year> <day>
-```
-
-to create the directory structure. Note that files will not be overwritten, with the exception of
-`input.txt`.
-
-The `update.py` script adds the challenge day to this README, it requires that there exists at least
-one day already, and is not well-done by any means. You also require a `session.cookie` file to
-run this if you wish. It can be run using
-
-```shell
-python update.py <year> <day> <stars>
-```
+I use some scripts to make my life easier (such as generating the the timed tables),
+see the [scripts](scripts/) folder for more information.
 
 ## 2023
 

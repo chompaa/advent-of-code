@@ -126,7 +126,7 @@ def update_readme(year: int, day: int, stars: int = 2, time: bool = True) -> Non
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    if len(sys.argv) != 3:
         print("Usage: update.py <year> <day>")
         sys.exit(1)
 
