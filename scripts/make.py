@@ -52,7 +52,7 @@ def make_files(year, day) -> None:
         None
     """
 
-    path = f"./{year}/day{day:02d}/"
+    path = f"./{year}/{day:02d}/"
 
     # make directories
     os.makedirs(path, exist_ok=True)

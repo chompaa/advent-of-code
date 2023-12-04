@@ -23,7 +23,7 @@ def time_solver(year: int, day: int, n: int = 1000) -> tuple[float]:
         FileNotFoundError: If the solver file does not exist.
     """
 
-    os.chdir(f"./{year}/day{day:02d}/")
+    os.chdir(f"./{year}/{day:02d}/")
 
     solver = open("solver.py").read()
     solver = re.split(r"^# part \d$", solver, flags=re.MULTILINE)

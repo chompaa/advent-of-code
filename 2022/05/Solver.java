@@ -8,7 +8,7 @@ class Solver {
 	public static void main(String[] args) throws Exception {
 		ArrayList<String> lines = new ArrayList<>();
 
-		Files.readAllLines(Path.of("example.txt")).forEach(line -> {
+		Files.readAllLines(Path.of("input.txt")).forEach(line -> {
 			lines.add(line);
 		});
 
