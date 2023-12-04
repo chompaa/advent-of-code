@@ -1,11 +1,12 @@
-import os
-import math
 import collections
+import inspect
+import math
+import os
 
-lines = []
+cwd = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
 
-with open(os.path.join(os.path.dirname(__file__), "input.txt"), "r") as f:
-    lines = f.readlines()
+with open(os.path.join(cwd, "example.txt"), "r") as f:
+    lines = f.read().splitlines()
 
 
 def get_neighbours(x, y, lst):

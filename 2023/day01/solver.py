@@ -1,10 +1,11 @@
+import inspect
 import os
 import re
 
-lines = []
+cwd = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
 
-with open(os.path.join(os.path.dirname(__file__), "example.txt"), "r") as f:
-    lines = f.readlines()
+with open(os.path.join(cwd, "example.txt"), "r") as f:
+    lines = f.read().splitlines()
 
 # part 1
 

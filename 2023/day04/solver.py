@@ -1,9 +1,9 @@
+import inspect
 import os
-import collections
 
-cards = []
+cwd = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
 
-with open(os.path.join(os.path.dirname(__file__), "input.txt"), "r") as f:
+with open(os.path.join(cwd, "example.txt"), "r") as f:
     cards = [
         (n1.split(": ")[-1].split(), n2.split())
         for n1, n2 in [card.split(" | ") for card in f.read().splitlines()]
@@ -14,6 +14,8 @@ def get_winning_amount(win, play):
     return sum(n in win for n in play)
 
 
+# part 1
+
 res = 0
 
 for win, play in cards:
@@ -23,6 +25,8 @@ for win, play in cards:
         res += 2 ** (amt - 1)
 
 print(res)
+
+# part 2
 
 res = [1 for _ in range(len(cards))]
 

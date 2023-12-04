@@ -29,12 +29,41 @@ python update.py <year> <day> <stars>
 
 ---
 
-| Day                                                            | Status |
-| -------------------------------------------------------------- | :----: |
-| [01 - Trebuchet!?](https://www.adventofcode.com/2023/day/1)    |  ⭐⭐  |
-| [02 - Cube Conundrum](https://www.adventofcode.com/2023/day/2) |  ⭐⭐  |
-| [03 - Gear Ratios](https://www.adventofcode.com/2023/day/3)    |  ⭐⭐  |
-| [04 - Scratchcards](https://www.adventofcode.com/2023/day/4)   |  ⭐⭐  |
+<table>
+  <tr>
+    <td align="center" rowspan=2><b>Day</b></th>
+    <td align="center" rowspan=2><b>Status</b></th>
+    <td align="center" colspan=2><b>Performance</b></th>
+  </tr>
+  <tr>
+    <td align="center"><b>Part 1</b></th>
+    <td align="center"><b>Part 2</b></th>
+  </tr>
+  <tr>
+    <td><a href="https://www.adventofcode.com/2023/day/1">01 - Trebuchet</a></td>
+    <td>⭐⭐</td>
+    <td>4118.96µs</td>
+    <td>7738.76µs</td>
+  </tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/2'>02 - Cube Conundrum</a></td>
+		<td>⭐⭐</td>
+		<td>623.38µs</td>
+		<td>699.21µs</td>
+	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/3'>03 - Gear Ratios</a></td>
+		<td>⭐⭐</td>
+		<td>null</td>
+		<td>null</td>
+	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/4'>04 - Scratchcards</a></td>
+		<td>⭐⭐</td>
+		<td>1417.64µs</td>
+		<td>1466.38µs</td>
+	</tr>
+</table>
 
 </details>
 

@@ -1,9 +1,12 @@
-import os
+import inspect
 import math
+import os
+
+cwd = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
 
 games = []
 
-with open(os.path.join(os.path.dirname(__file__), "example.txt"), "r") as f:
+with open(os.path.join(cwd, "example.txt"), "r") as f:
     for line in f.read().splitlines():
         game = line.split(": ")[1]
         moves = [

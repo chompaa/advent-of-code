@@ -1,11 +1,51 @@
+import os
+import re
 import sys
+import timeit
 
 import requests
 
 import util
 
 
-def update_readme(year: int, day: int, stars: int) -> None:
+def time_solver(year: int, day: int, n: int = 1000) -> tuple[float]:
+    """
+    Times the solver for the specified year and day, with a specified number of runs.
+
+    Args:
+        year (int): The year.
+        day (int): The day.
+        n (int): The number of runs.
+
+    Returns:
+        tuple[float]: The times for part 1 and part 2.
+
+    Raises:
+        FileNotFoundError: If the solver file does not exist.
+    """
+
+    os.chdir(f"./{year}/day{day:02d}/")
+
+    solver = open("solver.py").read()
+    solver = re.split(r"^# part \d$", solver, flags=re.MULTILINE)
+
+    setup, p_1, p_2 = solver
+
+    p_1_time = timeit.Timer(stmt=p_1, setup=setup, globals=globals())
+    p_2_time = timeit.Timer(stmt=p_2, setup=setup, globals=globals())
+
+    times = (p_1_time.timeit(number=n) / n, p_2_time.timeit(number=n) / n)
+
+    # convert times to microseconds
+    times = tuple(f"{time * (10**6):.2f}µs" for time in times)
+
+    #  be sure to go back to the root directory
+    os.chdir("../../")
+
+    return times
+
+
+def update_readme(year: int, day: int, stars: int = 2, time: bool = True) -> None:
     """
     Updates the README.md file with the specified year, day, and number of stars.
 
@@ -16,6 +56,12 @@ def update_readme(year: int, day: int, stars: int) -> None:
 
     Returns:
         None
+
+    Raises:
+        RuntimeError: If the day is less than 1.
+        RuntimeError: If the URL cannot be fetched.
+        RuntimeError: If the request to fetch the title fails.
+        RuntimeError: If the day already exists in README.md.
     """
 
     if day <= 1:
@@ -55,25 +101,37 @@ def update_readme(year: int, day: int, stars: int) -> None:
     if not title:
         raise RuntimeError("Failed to fetch title")
 
+    if time:
+        p_1_time, p_2_time = time_solver(year, day)
+    else:
+        p_1_time = p_2_time = "null"
+
+    entry = [
+        "\t<tr>\n",
+        f"\t\t<td><a href='{url}'>{day:02d} - {title}</a></td>\n",
+        f"\t\t<td>{'⭐' * stars}</td>\n",
+        f"\t\t<td>{p_1_time}</td>\n",
+        f"\t\t<td>{p_2_time}</td>\n",
+        f"\t</tr>\n",
+    ]
+
     with open("README.md", "r+", encoding="utf8") as f:
         lines = f.readlines()
 
         for idx, line in enumerate(lines):
             if url.replace(f"day/{day}", f"day/{day - 1}") in line:
-                entry = [f"| [{day:02d} - {title}]({url}) | {'⭐' * stars} |\n"]
-                lines = lines[: idx + 1] + entry + lines[idx + 1 :]
+                lines[idx + 5 : idx + 5] = entry
 
         f.seek(0)
         f.writelines(lines)
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print("Usage: update.py <year> <day> <stars>")
+    if len(sys.argv) != 2:
+        print("Usage: update.py <year> <day>")
         sys.exit(1)
 
     year = int(sys.argv[1])
     day = int(sys.argv[2])
-    stars = int(sys.argv[3])
 
-    update_readme(year, day, stars)
+    update_readme(year, day)
