@@ -13,6 +13,10 @@ see the [scripts](scripts/) folder for more information.
 
 ---
 
+> [!NOTE]
+> Performance runs were done on an Intel i7-9750H @ 2.60GHz, and were repeated
+> 1000 times.
+
 <table>
   <tr>
     <td align="center" rowspan=2><b>Day</b></th>
