@@ -30,10 +30,10 @@ def time_solver(year: int, day: int, n: int = 1000) -> tuple[float]:
 
     setup, p_1, p_2 = solver
 
-    p_1_time = timeit.Timer(stmt=p_1, setup=setup, globals=globals())
-    p_2_time = timeit.Timer(stmt=p_2, setup=setup, globals=globals())
+    p_1_time = timeit.timeit(stmt=p_1, setup=setup, globals=globals(), number=n) / n
+    p_2_time = timeit.timeit(stmt=p_2, setup=setup, globals=globals(), number=n) / n
 
-    times = (p_1_time.timeit(number=n) / n, p_2_time.timeit(number=n) / n)
+    times = (p_1_time, p_2_time)
 
     # convert times to microseconds
     times = tuple(f"{time * (10**6):.2f}µs" for time in times)
@@ -76,6 +76,8 @@ def update_readme(year: int, day: int, stars: int = 2, time: bool = True) -> Non
             if url in line:
                 raise RuntimeError(f"Day {day} already exists in README")
 
+    p_1_time, p_2_time = time_solver(year, day) if time else ("null", "null")
+
     session_id = util.get_session_id()
 
     # please change the user agent if you use this
@@ -101,8 +103,6 @@ def update_readme(year: int, day: int, stars: int = 2, time: bool = True) -> Non
     if not title:
         raise RuntimeError("Failed to fetch title")
 
-    p_1_time, p_2_time = time_solver(year, day) if time else ("null", "null")
-
     # again.. hacky
     entry = [
         "\t<tr>\n",
@@ -120,7 +120,7 @@ def update_readme(year: int, day: int, stars: int = 2, time: bool = True) -> Non
         for idx, line in enumerate(lines):
             if url.replace(f"day/{day}", f"day/{day - 1}") in line:
                 # could be handled a bit better..
-                offset = idx + len(entry) - 1
+                offset = idx + len(entry)
 
                 # insert the entry before the next day
                 lines[offset:offset] = entry
