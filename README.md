@@ -63,6 +63,13 @@ see the [scripts](scripts/) folder for more information.
 		<td><code>292.96µs</code></td>
 		<td><code>4080.67µs</code></td>
 	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/6'>06 - Wait For It</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/06/solver.py'>Link</a></td>
+		<td><code>204.44µs</code></td>
+		<td><code>138.88µs</code></td>
+	</tr>
 </table>
 
 </details>
