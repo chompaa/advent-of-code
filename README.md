@@ -45,9 +45,9 @@ see the [scripts](scripts/) folder for more information.
 	<tr>
 		<td><a href='https://www.adventofcode.com/2023/day/3'>03 - Gear Ratios</a></td>
 		<td>⭐⭐</td>
-		<td><a href="2023/03/solver.py">Link</a></td>
-		<td><code>null</code></td>
-		<td><code>null</code></td>
+		<td><a href='2023/03/solver.py'>Link</a></td>
+		<td><code>10907.36µs</code></td>
+		<td><code>11382.23µs</code></td>
 	</tr>
 	<tr>
 		<td><a href='https://www.adventofcode.com/2023/day/4'>04 - Scratchcards</a></td>

@@ -26,46 +26,67 @@ def get_neighbours(x, y, lst):
     ]
 
 
+# part 1
+
 res = 0
-gears = collections.defaultdict(list)
 
 for y, line in enumerate(lines):
-    x_s = x_e = None
+    x_e = None
     num = ""
 
     for x, char in enumerate(line):
         if char.isdigit():
-            if x_s is None:
-                x_s = x
-
             x_e = x
-
             num += char
 
-        if char.isdigit() and x != len(line) - 1 or not num:
+            if x != len(line) - 1:
+                continue
+
+        if not num:
             continue
 
-        n_1 = get_neighbours(x_s, y, lines)
+        n_1 = get_neighbours(x_e - (len(num) - 1), y, lines)
         n_2 = get_neighbours(x_e, y, lines) if len(num) > 1 else []
 
         for x_n, y_n in n_1 + n_2:
-            n = lines[y_n][x_n]
-
-            if n not in ".0123456789":
+            if lines[y_n][x_n] not in ".0123456789":
                 res += int(num)
-
-                if n == "*":
-                    gears[(x_n, y_n)].append(int(num))
-
                 break
 
-        x_s = x_e = None
+        x_e = None
         num = ""
-
-# part 1
 
 print(res)
 
 # part 2
 
-print(sum(math.prod(gear) for gear in gears.values() if len(gear) == 2))
+res = collections.defaultdict(list)
+
+for y, line in enumerate(lines):
+    x_e = None
+    num = ""
+
+    for x, char in enumerate(line):
+        if char.isdigit():
+            x_e = x
+            num += char
+
+            if x != len(line) - 1:
+                continue
+
+        if not num:
+            continue
+
+        n_1 = get_neighbours(x_e - (len(num) - 1), y, lines)
+        n_2 = get_neighbours(x_e, y, lines) if len(num) > 1 else []
+
+        for x_n, y_n in n_1 + n_2:
+            if lines[y_n][x_n] == "*":
+                res[(x_n, y_n)].append(int(num))
+                break
+
+        x_e = None
+        num = ""
+
+
+print(sum(math.prod(res) for res in res.values() if len(res) == 2))
