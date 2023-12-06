@@ -36,37 +36,37 @@ see the [scripts](scripts/) folder for more information.
     <td><code>7738.76µs</code></td>
   </tr>
 	<tr>
-		<td><a href='https://www.adventofcode.com/2023/day/2'>02 - Cube Conundrum</a></td>
+		<td><a href="https://www.adventofcode.com/2023/day/2">02 - Cube Conundrum</a></td>
 		<td>⭐⭐</td>
 		<td><a href="2023/02/solver.py">Link</a></td>
 		<td><code>623.38µs</code></td>
 		<td><code>699.21µs</code></td>
 	</tr>
 	<tr>
-		<td><a href='https://www.adventofcode.com/2023/day/3'>03 - Gear Ratios</a></td>
+		<td><a href="https://www.adventofcode.com/2023/day/3">03 - Gear Ratios</a></td>
 		<td>⭐⭐</td>
-		<td><a href='2023/03/solver.py'>Link</a></td>
+		<td><a href="2023/03/solver.py">Link</a></td>
 		<td><code>10907.36µs</code></td>
 		<td><code>11382.23µs</code></td>
 	</tr>
 	<tr>
-		<td><a href='https://www.adventofcode.com/2023/day/4'>04 - Scratchcards</a></td>
+		<td><a href="https://www.adventofcode.com/2023/day/4">04 - Scratchcards</a></td>
 		<td>⭐⭐</td>
 		<td><a href="2023/04/solver.py">Link</a></td>
 		<td><code>1417.64µs</code></td>
 		<td><code>1466.38µs</code></td>
 	</tr>
 	<tr>
-		<td><a href='https://www.adventofcode.com/2023/day/5'>05 - If You Give A Seed A Fertilizer</a></td>
+		<td><a href="https://www.adventofcode.com/2023/day/5">05 - If You Give A Seed A Fertilizer</a></td>
 		<td>⭐⭐</td>
-		<td><a href='2023/05/solver.py'>Link</a></td>
+		<td><a href="2023/05/solver.py">Link</a></td>
 		<td><code>292.96µs</code></td>
 		<td><code>4080.67µs</code></td>
 	</tr>
 	<tr>
-		<td><a href='https://www.adventofcode.com/2023/day/6'>06 - Wait For It</a></td>
+		<td><a href="https://www.adventofcode.com/2023/day/6">06 - Wait For It</a></td>
 		<td>⭐⭐</td>
-		<td><a href='2023/06/solver.py'>Link</a></td>
+		<td><a href="2023/06/solver.py">Link</a></td>
 		<td><code>204.44µs</code></td>
 		<td><code>138.88µs</code></td>
 	</tr>
