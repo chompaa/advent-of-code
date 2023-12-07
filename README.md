@@ -70,6 +70,13 @@ see the [scripts](scripts/) folder for more information.
 		<td><code>204.44µs</code></td>
 		<td><code>138.88µs</code></td>
 	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/7'>07 - Camel Cards</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/07/solver.py'>Link</a></td>
+		<td><code>3698.76µs</code></td>
+		<td><code>7372.13µs</code></td>
+	</tr>
 </table>
 
 </details>
