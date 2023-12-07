@@ -74,8 +74,8 @@ see the [scripts](scripts/) folder for more information.
 		<td><a href='https://www.adventofcode.com/2023/day/7'>07 - Camel Cards</a></td>
 		<td>⭐⭐</td>
 		<td><a href='2023/07/solver.py'>Link</a></td>
-		<td><code>3698.76µs</code></td>
-		<td><code>7372.13µs</code></td>
+		<td><code>3612.29µs</code></td>
+		<td><code>7194.69µs</code></td>
 	</tr>
 </table>
 

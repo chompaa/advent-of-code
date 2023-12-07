@@ -47,16 +47,7 @@ def get_winnings(pairs):
 
 order = "23456789TJQKA"
 
-res = [
-    hand
-    for hand, _ in sorted(
-        [[hand, get_rank(hand)] for hand in hands],
-        key=lambda x: (
-            x[1],
-            *map(order.index, x[0]),
-        ),
-    )
-]
+res = sorted(hands, key=lambda x: (get_rank(x), *map(order.index, x)))
 
 print(get_winnings(res))
 
@@ -85,16 +76,9 @@ def replace_joker(hand, order):
 
 order = "J23456789TQKA"
 
-res = [
-    hand
-    for hand, _ in sorted(
-        [[hand, get_rank(replace_joker(hand, order))] for hand in hands],
-        key=lambda x: (
-            x[1],
-            *map(order.index, x[0]),
-        ),
-    )
-]
+res = sorted(
+    hands, key=lambda x: (get_rank(replace_joker(x, order)), *map(order.index, x))
+)
 
 
 print(get_winnings(res))
