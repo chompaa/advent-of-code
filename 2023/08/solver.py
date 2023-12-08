@@ -5,7 +5,7 @@ import math
 
 cwd = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
 
-with open(os.path.join(cwd, "input.txt"), "r") as f:
+with open(os.path.join(cwd, "example.txt"), "r") as f:
     lines = f.read().splitlines()
 
 ops = [int(op) for op in lines[0].translate(str.maketrans("LR", "01"))]
