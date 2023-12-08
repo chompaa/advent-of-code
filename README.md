@@ -77,6 +77,20 @@ see the [scripts](scripts/) folder for more information.
 		<td><code>3612.29µs</code></td>
 		<td><code>7194.69µs</code></td>
 	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/8'>08 - Haunted Wasteland</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/08/solver.py'>Link</a></td>
+		<td><code>5723.94µs</code></td>
+		<td><code>36290.08µs</code></td>
+	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/9'>08 - Haunted Wasteland</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/08/solver.py'>Link</a></td>
+		<td><code>4548.57µs</code></td>
+		<td><code>41394.11µs</code></td>
+	</tr>
 </table>
 
 </details>
