@@ -84,6 +84,13 @@ see the [scripts](scripts/) folder for more information.
 		<td><code>4548.57µs</code></td>
 		<td><code>41394.11µs</code></td>
 	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/9'>09 - Mirage Maintenance</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/09/solver.py'>Link</a></td>
+		<td><code>5273.31µs</code></td>
+		<td><code>5791.25µs</code></td>
+	</tr>
 </table>
 
 </details>
