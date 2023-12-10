@@ -91,6 +91,13 @@ see the [scripts](scripts/) folder for more information.
 		<td><code>5273.31µs</code></td>
 		<td><code>5791.25µs</code></td>
 	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/10'>10 - Pipe Maze</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/10/solver.py'>Link</a></td>
+		<td><code>52023.52µs</code></td>
+		<td><code>763180.69µs</code></td>
+	</tr>
 </table>
 
 </details>
