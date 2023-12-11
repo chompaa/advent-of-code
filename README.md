@@ -32,71 +32,78 @@ see the [scripts](scripts/) folder for more information.
     <td><a href="https://www.adventofcode.com/2023/day/1">01 - Trebuchet</a></td>
     <td>⭐⭐</td>
 		<td><a href="2023/01/solver.py">Link</a></td>
-    <td><code>4118.96µs</code></td>
-    <td><code>7738.76µs</code></td>
+    <td><code>4.12ms</code></td>
+    <td><code>7.74ms</code></td>
   </tr>
 	<tr>
 		<td><a href="https://www.adventofcode.com/2023/day/2">02 - Cube Conundrum</a></td>
 		<td>⭐⭐</td>
 		<td><a href="2023/02/solver.py">Link</a></td>
-		<td><code>623.38µs</code></td>
-		<td><code>699.21µs</code></td>
+		<td><code>0.62ms</code></td>
+		<td><code>0.70ms</code></td>
 	</tr>
 	<tr>
 		<td><a href="https://www.adventofcode.com/2023/day/3">03 - Gear Ratios</a></td>
 		<td>⭐⭐</td>
 		<td><a href="2023/03/solver.py">Link</a></td>
-		<td><code>10907.36µs</code></td>
-		<td><code>11382.23µs</code></td>
+		<td><code>10.91ms</code></td>
+		<td><code>11.38ms</code></td>
 	</tr>
 	<tr>
 		<td><a href="https://www.adventofcode.com/2023/day/4">04 - Scratchcards</a></td>
 		<td>⭐⭐</td>
 		<td><a href="2023/04/solver.py">Link</a></td>
-		<td><code>1417.64µs</code></td>
-		<td><code>1466.38µs</code></td>
+		<td><code>1.42ms</code></td>
+		<td><code>1.47ms</code></td>
 	</tr>
 	<tr>
 		<td><a href="https://www.adventofcode.com/2023/day/5">05 - If You Give A Seed A Fertilizer</a></td>
 		<td>⭐⭐</td>
 		<td><a href="2023/05/solver.py">Link</a></td>
-		<td><code>292.96µs</code></td>
-		<td><code>4080.67µs</code></td>
+		<td><code>0.29ms</code></td>
+		<td><code>4.08ms</code></td>
 	</tr>
 	<tr>
 		<td><a href="https://www.adventofcode.com/2023/day/6">06 - Wait For It</a></td>
 		<td>⭐⭐</td>
 		<td><a href="2023/06/solver.py">Link</a></td>
-		<td><code>204.44µs</code></td>
-		<td><code>138.88µs</code></td>
+		<td><code>0.20ms</code></td>
+		<td><code>0.14ms</code></td>
 	</tr>
 	<tr>
 		<td><a href='https://www.adventofcode.com/2023/day/7'>07 - Camel Cards</a></td>
 		<td>⭐⭐</td>
 		<td><a href='2023/07/solver.py'>Link</a></td>
-		<td><code>3612.29µs</code></td>
-		<td><code>7194.69µs</code></td>
+		<td><code>3.61ms</code></td>
+		<td><code>7.19ms</code></td>
 	</tr>
 	<tr>
 		<td><a href='https://www.adventofcode.com/2023/day/8'>08 - Haunted Wasteland</a></td>
 		<td>⭐⭐</td>
 		<td><a href='2023/08/solver.py'>Link</a></td>
-		<td><code>4548.57µs</code></td>
-		<td><code>41394.11µs</code></td>
+		<td><code>4.55ms</code></td>
+		<td><code>41.39ms</code></td>
 	</tr>
 	<tr>
 		<td><a href='https://www.adventofcode.com/2023/day/9'>09 - Mirage Maintenance</a></td>
 		<td>⭐⭐</td>
 		<td><a href='2023/09/solver.py'>Link</a></td>
-		<td><code>5273.31µs</code></td>
-		<td><code>5791.25µs</code></td>
+		<td><code>5.27ms</code></td>
+		<td><code>5.79ms</code></td>
 	</tr>
 	<tr>
 		<td><a href='https://www.adventofcode.com/2023/day/10'>10 - Pipe Maze</a></td>
 		<td>⭐⭐</td>
 		<td><a href='2023/10/solver.py'>Link</a></td>
-		<td><code>52023.52µs</code></td>
-		<td><code>763180.69µs</code></td>
+		<td><code>52.02ms</code></td>
+		<td><code>763.18ms</code></td>
+	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/11'>11 - Cosmic Expansion</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/11/solver.py'>Link</a></td>
+		<td><code>29.59ms</code></td>
+		<td><code>36.85ms</code></td>
 	</tr>
 </table>
 

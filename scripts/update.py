@@ -35,8 +35,8 @@ def time_solver(year: int, day: int, n: int = 1000) -> tuple[float]:
 
     times = (p_1_time, p_2_time)
 
-    # convert times to microseconds
-    times = tuple(f"{time * (10**6):.2f}µs" for time in times)
+    # convert times to milliseconds
+    times = tuple(f"{time * (10**3):.2f}ms" for time in times)
 
     # be sure to go back to the root directory
     os.chdir("../../")
