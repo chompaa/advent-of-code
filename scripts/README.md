@@ -26,5 +26,5 @@ table with at least one entry first. You also require a `session.cookie` file to
 run this if you wish. It can be run using:
 
 ```shell
-python update.py <year> <day>
+python scripts/update.py <year> <day>
 ```
