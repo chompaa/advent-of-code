@@ -105,6 +105,13 @@ see the [scripts](scripts/) folder for more information.
 		<td><code>29.59ms</code></td>
 		<td><code>36.85ms</code></td>
 	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/12'>12 - Hot Springs</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/12/solver.py'>Link</a></td>
+		<td><code>--</code></td>
+		<td><code>--</code></td>
+	</tr>
 </table>
 
 </details>
