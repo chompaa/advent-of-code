@@ -119,6 +119,13 @@ see the [scripts](scripts/) folder for more information.
 		<td><code>12.65ms</code></td>
 		<td><code>11.57ms</code></td>
 	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/14'>14 - Parabolic Reflector Dish</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/14/solver.py'>Link</a></td>
+		<td><code>--</code></td>
+		<td><code>--</code></td>
+	</tr>
 </table>
 
 </details>
