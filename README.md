@@ -133,6 +133,13 @@ see the [scripts](scripts/) folder for more information.
 		<td><code>0.13ms</code></td>
 		<td><code>0.12ms</code></td>
 	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/16'>16 - The Floor Will Be Lava</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/16/solver.py'>Link</a></td>
+		<td><code>--</code></td>
+		<td><code>--</code></td>
+	</tr>
 </table>
 
 </details>
