@@ -3,7 +3,7 @@ import inspect
 
 cwd = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
 
-with open(os.path.join(cwd, "input.txt"), "r") as f:
+with open(os.path.join(cwd, "example.txt"), "r") as f:
     ops = [
         (d, int(a), c[2:-1])
         for d, a, c in [line.split() for line in f.read().splitlines()]
