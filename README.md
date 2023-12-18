@@ -140,6 +140,13 @@ see the [scripts](scripts/) folder for more information.
 		<td><code>--</code></td>
 		<td><code>--</code></td>
 	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/17'>17 - Clumsy Crucible</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/17/solver.py'>Link</a></td>
+		<td><code>--</code></td>
+		<td><code>--</code></td>
+	</tr>
 </table>
 
 </details>
