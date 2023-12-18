@@ -147,6 +147,13 @@ see the [scripts](scripts/) folder for more information.
 		<td><code>--</code></td>
 		<td><code>--</code></td>
 	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/18'>18 - Lavaduct Lagoon</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/18/solver.py'>Link</a></td>
+		<td><code>0.13ms</code></td>
+		<td><code>0.14ms</code></td>
+	</tr>
 </table>
 
 </details>
