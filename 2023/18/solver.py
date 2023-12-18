@@ -3,7 +3,7 @@ import inspect
 
 cwd = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
 
-with open(os.path.join(cwd, "example.txt"), "r") as f:
+with open(os.path.join(cwd, "input.txt"), "r") as f:
     ops = [
         (d, int(a), c[2:-1])
         for d, a, c in [line.split() for line in f.read().splitlines()]
@@ -54,7 +54,7 @@ curr_pos = 0
 res = 0
 
 for _, _, h in ops:
-    d, a = h[-1].translate(str.maketrans("0123", "RDLU")), int(h[:-2], 16)
+    d, a = h[-1].translate(str.maketrans("0123", "RDLU")), int(h[:-1], 16)
 
     res += get_lava_amount(curr_pos, d, a)
     curr_pos += get_pos(d) * a
