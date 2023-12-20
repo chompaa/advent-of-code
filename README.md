@@ -154,6 +154,13 @@ see the [scripts](scripts/) folder for more information.
 		<td><code>0.59ms</code></td>
 		<td><code>1.00ms</code></td>
 	</tr>
+	<tr>
+		<td><a href='https://www.adventofcode.com/2023/day/19'>19 - Aplenty</a></td>
+		<td>⭐⭐</td>
+		<td><a href='2023/19/solver.py'>Link</a></td>
+		<td><code>3.32ms</code></td>
+		<td><code>6.80ms</code></td>
+	</tr>
 </table>
 
 </details>
