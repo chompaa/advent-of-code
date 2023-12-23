@@ -15,19 +15,19 @@ class Vector3:
     y: int
     z: int
 
+    def __sub__(self, other):
+        assert isinstance(other, Vector3)
+        return Vector3(self.x - other.x, self.y - other.y, self.z - other.z)
+
     def empty():
         return Vector3(0, 0, 0)
 
     def unit_z():
         return Vector3(0, 0, 1)
 
-    def __sub__(self, other):
-        assert isinstance(other, Vector3)
-        return Vector3(self.x - other.x, self.y - other.y, self.z - other.z)
-
 
 @dataclasses.dataclass
-class brick:
+class Brick:
     min: Vector3
     max: Vector3
 
@@ -42,7 +42,7 @@ class brick:
     def sub(self, other):
         assert isinstance(other, Vector3)
 
-        return brick(self.min - other, self.max - other)
+        return Brick(self.min - other, self.max - other)
 
 
 def check_collision(c1, bricks):
@@ -100,7 +100,7 @@ def find_safe_disintegrates(bricks):
 
 bricks = sorted(
     [
-        brick(
+        Brick(
             Vector3(*map(int, min.split(","))),
             Vector3(*map(int, max.split(","))),
         )
