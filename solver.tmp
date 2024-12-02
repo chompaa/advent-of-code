@@ -1,7 +1,2 @@
-import os
-import inspect
+lines = open(0).read().splitlines()
 
-cwd = os.path.dirname(os.path.abspath(inspect.stack()[0][1]))
-
-with open(os.path.join(cwd, "example.txt"), "r") as f:
-    lines = f.read().splitlines()

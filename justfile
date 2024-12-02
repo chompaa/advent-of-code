@@ -1,6 +1,6 @@
 set dotenv-load
 
-year := "2023"
+year := "2024"
 
 alias m := make
 alias u := use
@@ -8,14 +8,14 @@ alias t := test
 alias r := run
 
 make day:
-  python scripts/make.py {{day}}
-  use
+  python3 scripts/make.py {{year}} {{day}}
+  python3 scripts/use.py {{year}} {{day}}
 
 use day:
-  python scripts/use.py {{year}} {{day}}
+  python3 scripts/use.py {{year}} {{day}}
 
 test:
-  python $DAY/solver.py < $DAY/example.txt
+  python3 $DAY/solver.py < $DAY/example.txt
 
 run:
-  python $DAY/solver.py < $DAY/input.txt
+  python3 $DAY/solver.py < $DAY/input.txt
