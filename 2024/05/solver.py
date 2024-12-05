@@ -1,4 +1,5 @@
 import collections
+import copy
 
 data = open(0).read().split("\n\n")
 
@@ -29,18 +30,13 @@ print(res)
 res = 0
 
 for update in updates:
-    sorting = True
-    corrected = False
-    while sorting:
-        sorting = False
-        for index, page in enumerate(update):
-            for n in rules[page]:
-                if n in update[index + 1 :]:
-                    update.remove(n)
-                    update.insert(index, n)
-                    sorting = True
-                    corrected = True
-    if corrected:
+    bad = False
+    for i in range(len(update)):
+        for j in range(i + 1, len(update)):
+            if update[j] in rules[update[i]]:
+                update.insert(i, update.pop(j))
+                bad = True
+    if bad:
         res += update[len(update) // 2]
 
 print(res)
